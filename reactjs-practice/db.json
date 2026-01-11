@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "0b75",
+      "fname": "Naveen",
+      "lname": "Bellam",
+      "state": "AP",
+      "gender": "male",
+      "dob": "2026-01-14",
+      "areasOfInterest": [
+        "travel",
+        "movies"
+      ]
+    },
+    {
+      "id": "281e",
+      "fname": "Saranya",
+      "lname": "Devika",
+      "state": "TS",
+      "gender": "female",
+      "dob": "2026-01-28",
+      "areasOfInterest": [
+        "travel",
+        "music",
+        "sports"
+      ]
+    },
+    {
+      "id": "19f1",
+      "fname": "ok",
+      "lname": "test",
+      "state": "MH",
+      "gender": "others",
+      "dob": "2030-07-14",
+      "areasOfInterest": [
+        "music"
+      ]
+    }
+  ]
+}
