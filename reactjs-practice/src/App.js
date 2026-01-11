@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import ClassCrud01 from './components/ClassCrud01';
+import ClassCrud02 from './components/ClassCrud02';
+import FuncCrud from './components/FuncCrud';
+import FuncCrudPrac from './components/FuncCrudPrac';
+import ClassComp from './components/JSON-CRUD/ClassComp';
+import FuncComp from './components/JSON-CRUD/FuncComp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>Naveen</p>
-      </header>
+      {/* <ClassCrud01 /> */}
+      {/* <ClassCrud02 /> */}
+      {/* <FuncCrud/> */}
+      {/* <FuncCrudPrac/> */}
+      {/* <FuncComp/> */}
+      <ClassComp/>
     </div>
   );
 }
