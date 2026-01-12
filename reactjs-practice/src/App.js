@@ -1,4 +1,5 @@
 import './App.css';
+import ParentClassComp from './components/app1-react-life-cycles-class/ParentClassComp';
 import ClassCrud01 from './components/ClassCrud01';
 import ClassCrud02 from './components/ClassCrud02';
 import FuncCrud from './components/FuncCrud';
@@ -14,7 +15,8 @@ function App() {
       {/* <FuncCrud/> */}
       {/* <FuncCrudPrac/> */}
       {/* <FuncComp/> */}
-      <ClassComp/>
+      {/* <ClassComp/> */}
+      <ParentClassComp/>
     </div>
   );
 }
