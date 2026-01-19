@@ -35,6 +35,31 @@
       "areasOfInterest": [
         "music"
       ]
+    },
+    {
+      "id": "0fb7",
+      "fname": "check",
+      "lname": "ram",
+      "gender": "female",
+      "dob": "2025-08-14",
+      "state": "TS",
+      "areasOfInterest": [
+        "travel"
+      ]
+    },
+    {
+      "id": "fe60",
+      "fname": "check",
+      "lname": "ram",
+      "gender": "others",
+      "dob": "2025-08-14",
+      "state": "TS",
+      "areasOfInterest": [
+        "music",
+        "travel",
+        "movies",
+        "sports"
+      ]
     }
   ]
 }

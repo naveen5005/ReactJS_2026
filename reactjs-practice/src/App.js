@@ -6,6 +6,7 @@ import ReusableCounter from './components/app3-render-props-func/ReusableCounter
 import ClickCountClass from './components/app4-render-props-class/ClickCountClass';
 import HoverCountClass from './components/app4-render-props-class/HoverCountClass';
 import ReusableCountClass from './components/app4-render-props-class/ReusableCountClass';
+import UsersCrud from './components/app5-async-crud-fetch/UsersCrud';
 import ClassCrud01 from './components/ClassCrud01';
 import ClassCrud02 from './components/ClassCrud02';
 import FuncCrud from './components/FuncCrud';
@@ -43,7 +44,7 @@ function App() {
         )
       }}/> */}
 
-      <ReusableCountClass render = {(counter,handleIncrement,handleDecrement)=>(
+      {/* <ReusableCountClass render = {(counter,handleIncrement,handleDecrement)=>(
         <HoverCountClass 
           counter = {counter}
           handleIncrement = {handleIncrement}
@@ -57,7 +58,9 @@ function App() {
           handleIncrement = {handleIncrement}
           handleDecrement = {handleDecrement}
         />
-      )}/>
+      )}/> */}
+
+      <UsersCrud/>
     </div>
   );
 }
