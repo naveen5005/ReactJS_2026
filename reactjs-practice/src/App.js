@@ -9,6 +9,9 @@ import ReusableCountClass from './components/app4-render-props-class/ReusableCou
 import UsersCrud from './components/app5-async-crud-fetch/UsersCrud';
 import ClickCounterHOC from './components/app7-react-hoc-func/ClickCounterHOC';
 import HoverCounterHOC from './components/app7-react-hoc-func/HoverCounterHOC';
+import ClickCounterClass from './components/app8-react-hoc-class/ClickCounterClass';
+import HoverCounterClass from './components/app8-react-hoc-class/HoverCounterClass';
+import MainComp from './components/app9-react-props-drill-down/MainComp';
 import ClassCrud01 from './components/ClassCrud01';
 import ClassCrud02 from './components/ClassCrud02';
 import FuncCrud from './components/FuncCrud';
@@ -64,8 +67,13 @@ function App() {
 
       {/* <UsersCrud/> */}
 
-      <ClickCounterHOC/>
-      <HoverCounterHOC/>
+      {/* <ClickCounterHOC/>
+      <HoverCounterHOC/> */}
+
+      {/* <ClickCounterClass/>
+      <HoverCounterClass/> */}
+
+      <MainComp/>
     </div>
   );
 }
