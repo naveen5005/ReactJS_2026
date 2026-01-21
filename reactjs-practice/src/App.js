@@ -1,5 +1,6 @@
 import './App.css';
 import ParentClassComp from './components/app1-react-life-cycles-class/ParentClassComp';
+import ReusableContext from './components/app10-react-useContext/ReusableContext';
 import ClickCounter from './components/app3-render-props-func/ClickCounter';
 import HoverCounter from './components/app3-render-props-func/HoverCounter';
 import ReusableCounter from './components/app3-render-props-func/ReusableCounter';
@@ -73,7 +74,9 @@ function App() {
       {/* <ClickCounterClass/>
       <HoverCounterClass/> */}
 
-      <MainComp/>
+      {/* <MainComp/> */}
+
+      <ReusableContext/>
     </div>
   );
 }
