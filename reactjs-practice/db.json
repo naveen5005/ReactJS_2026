@@ -17,11 +17,10 @@
       "fname": "Saranya",
       "lname": "Devika",
       "state": "TS",
-      "gender": "female",
+      "gender": "others",
       "dob": "2026-01-28",
       "areasOfInterest": [
         "travel",
-        "music",
         "sports"
       ]
     },
@@ -39,12 +38,13 @@
     {
       "id": "0fb7",
       "fname": "check",
-      "lname": "ram",
-      "gender": "female",
+      "lname": "se",
+      "gender": "others",
       "dob": "2025-08-14",
       "state": "TS",
       "areasOfInterest": [
-        "travel"
+        "travel",
+        "movies"
       ]
     },
     {
@@ -55,9 +55,7 @@
       "dob": "2025-08-14",
       "state": "TS",
       "areasOfInterest": [
-        "music",
         "travel",
-        "movies",
         "sports"
       ]
     }
