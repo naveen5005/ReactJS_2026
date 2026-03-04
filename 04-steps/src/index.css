@@ -1,0 +1,46 @@
+.steps{
+background-color: lightcyan;
+padding: 30px;
+width: 300px;
+margin: 40px auto auto auto;
+}
+
+.numbers{
+  display: flex;
+  justify-content: space-between;
+}
+.numbers>div{
+  background-color: lightgray;
+  aspect-ratio: 1;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  display: flex;
+  justify-content: space-between;
+}
+.button >button {
+  background-color: blue;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+.numbers .active{
+  background-color:blue;
+  color: white;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 40px;
+  color: inherit;
+}
