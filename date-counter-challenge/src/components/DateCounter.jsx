@@ -34,5 +34,5 @@ function StepCount({step,setStep}){
 function MessageDisplay({count}){
   const date = new Date();
   date.setDate(date.getDate() + count)
-  return <p>{count === 0 ? `Today is ${date.toDateString()}`: `${count} days from today is ${date.toDateString()}`}</p>
+  return <p>{count === 0 ? `Today is `: count>0?`${count} from today is `:`${count} days ago was `}{date.toDateString()}</p>
 }
