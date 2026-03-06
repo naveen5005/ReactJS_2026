@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.logo {
+  text-align: center;
+  font-size: 3rem;
+  background-color: orange;
+  padding: 20px;
+}
+.add-form{
+  background-color: coral;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+form{
+  display: flex;
+  gap: 15px;
+}
+.add-button {
+  background-color: lightgreen;
+  padding: 8px;
+  border: none;
+  width: 70px;
+  border-radius: 10px;
+}
+.list{
+  text-align: center;
+  background-color: chocolate;
+  height: 370px;
+}
+.stats{
+  text-align: center;
+  background-color: lightgreen;
+  padding: 10px;
+}
+.delete-item{
+  border: none;
+}
+.list ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+li{
+  list-style: none;
+}
