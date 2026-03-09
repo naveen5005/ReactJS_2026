@@ -75,6 +75,9 @@ function FormDetails({newItem,setNewItem, initialItems, setInitialItems}) {
 }
 
 function PackageList({ initialItems,setInitialItems }) {
+  const handleToggleItem = (id) =>{
+    setInitialItems((prev)=>prev.map((item)=>item.id === id ?{...item,packed: !item.packed} : item))
+  }
   return (
     <div className="list">
       <ul>
@@ -82,7 +85,7 @@ function PackageList({ initialItems,setInitialItems }) {
           initialItems.map((num)=>(
             <li key={num.id}>
               <div style={{display:"flex"}}>
-                <input type="checkbox" />
+                <input type="checkbox" onChange={()=>handleToggleItem(num.id)}/>
                 <ListItems num={num} setInitialItems={setInitialItems}/>
               </div>
             </li>
@@ -105,5 +108,8 @@ function ListItems({num,setInitialItems}){
 }
 
 function Stats({initialItems}){
-  return <p className="stats">You have {initialItems.length} items on your list and you already packed {initialItems.filter((item)=>item.packed).length} items.</p>
+  const numItems = initialItems.length;
+  const numPacked = initialItems.filter((item)=>item.packed).length;
+  const percentage = numItems === 0 ? 0 : Math.round((numPacked / numItems) * 100);
+  return <p className="stats">You have {numItems} items on your list and you already packed {numPacked} items ({percentage}%).</p>
 }
