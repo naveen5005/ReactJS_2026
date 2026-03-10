@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-const QuestionsAccordion = () => {
+const AccordionChallangeV2 = () => {
   const [questions, setQuestions] = useState([
     {
       id: 1,
@@ -62,17 +62,18 @@ const QuestionsAccordion = () => {
         "The virtual DOM is a lightweight copy of the real DOM that React uses to optimize updates.",
     },
   ]);
+  const [curOpen, isCurOpen] = useState(null)
   return (
     <div className="App">
       {questions.map((que) => (
-        <AccordionItems num={que.id} title={que.question} text={que.answer} key={que.id} />
+        <AccordionItems num={que.id} title={que.question} text={que.answer} key={que.id} curOpen={curOpen} isCurOpen={isCurOpen} />
       ))}
     </div>
   );
 };
-function AccordionItems({ num, title, text }) {
-  const[isOpen,setIsopen]=useState(false);
-  
+
+function AccordionItems({ num, title, text, curOpen, isCurOpen }) {  
+    const isOpen = num === curOpen;
   const containerStyle = {
       border: "2px solid lightgrey",
       width: "600px",
@@ -85,6 +86,9 @@ function AccordionItems({ num, title, text }) {
     paddingRight:"10px",
     color: isOpen ? "green": "lightgray"
   }
+  const handleToggle = () => {
+    isCurOpen(isOpen ? null : num);
+  }
   return (
     <div style={containerStyle}>
       <div style={{display:"flex",justifyContent:"space-between",padding:"0px 20px"}}>
@@ -92,10 +96,10 @@ function AccordionItems({ num, title, text }) {
         <p style={numStyle}>{num}</p>
         <p>{title}</p>
         </div>
-        <p onClick={()=>setIsopen(!isOpen)} style={{cursor: "pointer"}}>{isOpen ? '-' : '+'}</p>
+        <p onClick={handleToggle} style={{cursor: "pointer"}}>{isOpen ? '-' : '+'}</p>
       </div>
       {isOpen && <div style={{textAlign:"start",marginLeft:"37px",marginBottom:"20px"}}>{text}</div>}
     </div>
   );
 }
-export default QuestionsAccordion;
+export default AccordionChallangeV2
