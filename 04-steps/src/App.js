@@ -5,12 +5,14 @@ function App() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
 
-  const handleToggle =()=>{
+  const handleToggle = () => {
     setIsOpen(!isOpen);
-  }
+  };
   return (
     <>
-      <button type="button" className="close" onClick={handleToggle}>&times;</button>
+      <button type="button" className="close" onClick={handleToggle}>
+        &times;
+      </button>
       {isOpen && (
         <div className="steps">
           <Steps step={step} />
@@ -50,13 +52,21 @@ const handlePevStep = (setStep, step) => {
 function FooterButtons({ setStep, step }) {
   return (
     <div className="button">
-      <button type="button" onClick={() => handlePevStep(setStep, step)}>
-        Previous
-      </button>
-      <button type="button" onClick={() => handleNextStep(setStep, step)}>
-        Next
-      </button>
+      <Button onClick={() => handlePevStep(setStep, step)}>
+        <span>👈Previous</span>
+      </Button>
+      <Button onClick={() => handleNextStep(setStep, step)}>
+        <span>Next👉</span>
+      </Button>
     </div>
   );
 }
 export default App;
+
+function Button({ onClick, children }) {
+  return (
+    <button type="button" onClick={onClick}>
+      {children}
+    </button>
+  );
+}
