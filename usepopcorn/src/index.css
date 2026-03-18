@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #6741d9;
+  align-items: center;
+}
+.nav >h3, .nav >p {
+  background-color: #6741d9;
+  color: white;
+}
+.search{
+  background-color: #7950f2;
+  width: 30%;
+  /* height: 40%; */
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.search:focus {
+  color: white;
+}
+.search::placeholder {
+  color: white;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+/* .movies-list,.watched-movies{
+  background-color: lightgreen;
+} */
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.movies-lists,.watched-movies{
+  padding: 20px;
+  border: 2px solid red;
+}
+.movie-details{
+  display: flex;
+  gap: 25px;
+  align-items: anchor-center;
+}
+.button-toggle{
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 3px;
+  margin-left: 167px;
+  position: relative;
+  bottom: 12px;
+  left: 13px;
+}
+.button-toggle-watched{
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 3px;
+  margin-left: 264px;
+  position: relative;
+  bottom: 12px;
+  left: 13px;
+}
+.summary{
+  color: white;
+  box-shadow: 0 1px 0 0 lightgray;
+  padding: 10px;
+}
+.summary >div{
+  display: flex;
+}
+.watched-lists{
+  display: flex;
+  gap: 20px;
+  align-items: anchor-center;
+}
+.watched-rating-details{
+  display: flex;
+  gap: 10px;
+}
+.title{
+  color: white;
+}
