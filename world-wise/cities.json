@@ -1,0 +1,84 @@
+{
+"cities" : [
+  {
+    "id": 1,
+    "name": "Dubai",
+    "country": "UAE",
+    "image": "https://example.com/dubai.jpg",
+    "description": "City of skyscrapers and luxury shopping",
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Singapore",
+    "country": "Singapore",
+    "image": "https://example.com/singapore.jpg",
+    "description": "Clean, modern, vibrant city",
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "name": "Barcelona",
+    "country": "Spain",
+    "image": "https://example.com/barcelona.jpg",
+    "description": "Famous for architecture and beaches",
+    "rating": 4.6
+  },
+  {
+    "id": 4,
+    "name": "New York",
+    "country": "USA",
+    "image": "https://example.com/newyork.jpg",
+    "description": "The iconic city known for Times Square and skyscrapers",
+    "rating": 4.8
+  },
+  {
+    "id": 5,
+    "name": "Tokyo",
+    "country": "Japan",
+    "image": "https://example.com/tokyo.jpg",
+    "description": "A blend of futuristic tech and traditional culture",
+    "rating": 4.9
+  },
+  {
+    "id": 6,
+    "name": "Sydney",
+    "country": "Australia",
+    "image": "https://example.com/sydney.jpg",
+    "description": "Harbour city known for Opera House and beaches",
+    "rating": 4.7
+  },
+  {
+    "id": 7,
+    "name": "Paris",
+    "country": "France",
+    "image": "https://example.com/paris.jpg",
+    "description": "City of love, fashion and the Eiffel Tower",
+    "rating": 4.8
+  },
+  {
+    "id": 8,
+    "name": "Cape Town",
+    "country": "South Africa",
+    "image": "https://example.com/capetown.jpg",
+    "description": "Scenic coastal city with Table Mountain",
+    "rating": 4.7
+  },
+  {
+    "id": 9,
+    "name": "Rome",
+    "country": "Italy",
+    "image": "https://example.com/rome.jpg",
+    "description": "Historic city famous for ancient monuments",
+    "rating": 4.6
+  },
+  {
+    "id": 10,
+    "name": "Toronto",
+    "country": "Canada",
+    "image": "https://example.com/toronto.jpg",
+    "description": "Modern multicultural city with iconic skyline",
+    "rating": 4.7
+  }
+]
+}

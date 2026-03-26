@@ -1,0 +1,23 @@
+nav{
+ display: flex;
+ justify-content: space-between; 
+ align-items: center;
+}
+ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;  
+    margin-right: 30px;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+img{
+    height: 70px;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
